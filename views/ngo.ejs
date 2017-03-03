@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HackIllinois 2017</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/ngo.css">
+</head>
+
+<body>
+<div class="example3">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://hackillinois.org"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/474/994/datas/medium.png" alt="HackIllinois 2017">
+        </a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+        </ul>
+
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>
+
+<div class="container">
+<div class="content" style="margin-top:-20px">
+  </br>
+
+  <div class="row bg-image" style="height:100%;">
+      <img src="/images/smile.jpg" style="width:1532px"/>
+    </div>
+  <h2> HOW YOU <strong>CAN HELP</strong></h2>
+
+  <!-- foreground -->
+  <div class="row fg-image text-center center-block" style="height:100%; margin-top:20px">
+    <div class="col-md-4">
+      <blockquote>
+        <img class="child" src="/images/animals.jpg" height="200" width="200">
+        <h3>The PAWS Chicago Fur Ball</h3>
+        <p  align="left"> PAWS fundraising events directly fund the lifesaving programs for homeless pets.</p>
+        <a href="#" class="btn btn-primary clickable" >Register</a>
+        <a href="#" class="btn btn-primary invite">Invite Friends</a>
+        <a href="http://www.pawschicago.org/events-dog-training/fundraising-events/fur-ball-event/">Details</a>
+
+      </blockquote>
+    </div>
+    <div class="col-md-4">
+      <blockquote>
+        <img class="child" src="/images/kids.jpg" height="200" width="200">
+        <h3>Racing for PHIT kids chanrity events</h3>
+        <p align="left"> PHIT KIDS Charity Events are local tennis events who are giving a portion of their events proceeds to PHIT America.</p>
+        <div >
+        <a href="#" class="btn btn-primary clickable">Register</a>
+          <a href="#" class="btn btn-primary invite">Invite Friends</a>
+          <a href="http://www.phitamerica.org/Programs/PHIT_KIDS_CHARITY_EVENTS/RACE.htm">Details</a>
+        </div>
+      </blockquote>
+    </div>
+    <div class="col-md-4">
+      <blockquote>
+        <img class="child" src="/images/old.jpg" height="200" width="200">
+        <h3>Help elderly</h3>
+        <p align="left">Aasra-Ray of hope- we are doing charity cum event at Shreyas old age.</p>
+        <a href="#" class="btn btn-primary clickable">Register</a>
+        <a href="#" class="btn btn-primary invite">Invite Friends</a>
+        <a href="https://www.meetup.com/Bangalore-Charity-Events-Meetup/events/229143532/">Details</a>
+      </blockquote>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+
+<script type="text/javascript">
+  jQuery('.clickable').on('click', function () {
+    jQuery.get('/sendMessage', function () {
+      alert('Thank you for registering.');
+    });
+  });
+
+  jQuery('.invite').on('click', function () {
+    jQuery.get('/invite', function () {
+      alert('A message has been sent to your friends')});
+  });
+</script>
+
+</html>

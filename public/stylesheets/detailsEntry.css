@@ -1,0 +1,56 @@
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px;
+  width: auto;
+}
+.example3 {
+  padding: 0px;
+  margin: 0px;
+}
+.example3 .navbar-brand {
+  height: 80px;
+}
+
+.example3 .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.example3 .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.label-color{
+  color:white;
+}
+
+.form-inline > *{
+  margin: 0px 5px 0px 5 px;
+}
+
+.bg-image{
+  position: absolute;
+  z-index:0;
+  opacity: 0.8;
+}
+
+.fg-image{
+  position: absolute;
+  z-index:1;
+}
+
+.content{
+  margin-left:-190px;
+  margin-top:-20px;
+}
+
+#sgf{
+  padding-top: 50px
+}
