@@ -7,6 +7,6 @@ Used messaging API to communicate to the NGO's when a person register to attend.
 
 Authors: 
 1. Satyam Sinha
-2. Amardeep Sighlani
+2. Amardeepsingh Sighlani
 3. Yash Jain
 4. Aman Yadav
